@@ -1,16 +1,15 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"experimentalDecorators": true,
-		"outDir": "dist-cjs",
-		"pretty": true,
-		"rootDir": "src",
-		"strict": false,
 		"importHelpers": true,
 		"module": "esnext",
 		"noEmitHelpers": true,
-		"target": "es5"
-	},
-	"include": ["src/"]
+		"target": "es5",
+		"baseUrl": ".",
+		"experimentalDecorators": true,
+		"outDir": "dist-es",
+		"pretty": true,
+		"rootDir": "src",
+		"strict": false
+	}
 }

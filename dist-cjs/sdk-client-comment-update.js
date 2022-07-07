@@ -14,10 +14,10 @@ let SdkClientCommentUpdatePlugin = class SdkClientCommentUpdatePlugin extends co
     onDeclaration(context, reflection, node) {
         if (!node)
             return;
-        const rawComment = (0, comment_1.getRawComment)(node);
+        const rawComment = comment_1.getRawComment(node);
         if (!rawComment)
             return;
-        const comment = (0, comment_1.parseComment)(this.cleanEmptyCommentLines(rawComment));
+        const comment = comment_1.parseComment(this.cleanEmptyCommentLines(rawComment));
         reflection.comment = comment;
     }
     cleanEmptyCommentLines(comment) {
@@ -30,6 +30,6 @@ let SdkClientCommentUpdatePlugin = class SdkClientCommentUpdatePlugin extends co
     }
 };
 SdkClientCommentUpdatePlugin = tslib_1.__decorate([
-    (0, components_1.Component)({ name: "SdkClientCommentUpdatePlugin" })
+    components_1.Component({ name: "SdkClientCommentUpdatePlugin" })
 ], SdkClientCommentUpdatePlugin);
 exports.SdkClientCommentUpdatePlugin = SdkClientCommentUpdatePlugin;

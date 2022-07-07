@@ -1,4 +1,5 @@
 {
+	"extends": "./tsconfig.json",
 	"compilerOptions": {
 		"baseUrl": ".",
 		"declarationDir": "dist-types",
@@ -8,7 +9,5 @@
 		"declaration": true,
 		"emitDeclarationOnly": true,
 		"removeComments": false
-	},
-	"extends": "./tsconfig.json",
-	"include": ["src/"]
+	}
 }

@@ -1,16 +1,15 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
+		"importHelpers": true,
+		"module": "commonjs",
+		"noEmitHelpers": true,
+		"target": "ES2018",
 		"baseUrl": ".",
 		"experimentalDecorators": true,
 		"outDir": "dist-cjs",
 		"pretty": true,
 		"rootDir": "src",
-		"strict": false,
-		"importHelpers": true,
-		"module": "commonjs",
-		"noEmitHelpers": true,
-		"target": "ES2018"
-	},
-	"include": ["src/"]
+		"strict": false
+	}
 }

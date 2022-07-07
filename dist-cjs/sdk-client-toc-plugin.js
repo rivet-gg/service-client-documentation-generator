@@ -117,11 +117,11 @@ let SdkClientTocPlugin = class SdkClientTocPlugin extends components_1.RendererC
         while (projectModel.constructor.name !== "ProjectReflection" && !projectModel.kindOf(reflections_1.ReflectionKind.SomeModule)) {
             projectModel = projectModel.parent;
         }
-        const clientsDirectory = (0, utils_1.getCurrentClientDirectory)({ project: projectModel });
-        return (0, path_1.dirname)((0, path_1.dirname)(clientsDirectory === null || clientsDirectory === void 0 ? void 0 : clientsDirectory.directories.src.files.find((file) => file.name.endsWith("Client.ts")).fullFileName));
+        const clientsDirectory = utils_1.getCurrentClientDirectory({ project: projectModel });
+        return path_1.dirname(path_1.dirname(clientsDirectory === null || clientsDirectory === void 0 ? void 0 : clientsDirectory.directories.src.files.find((file) => file.name.endsWith("Client.ts")).fullFileName));
     }
 };
 SdkClientTocPlugin = tslib_1.__decorate([
-    (0, components_1.Component)({ name: "SdkClientTocPlugin" })
+    components_1.Component({ name: "SdkClientTocPlugin" })
 ], SdkClientTocPlugin);
 exports.SdkClientTocPlugin = SdkClientTocPlugin;

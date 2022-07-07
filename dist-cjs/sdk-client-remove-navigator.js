@@ -20,6 +20,6 @@ let SdkClientRemoveNavigatorPlugin = class SdkClientRemoveNavigatorPlugin extend
     }
 };
 SdkClientRemoveNavigatorPlugin = tslib_1.__decorate([
-    (0, components_1.Component)({ name: "SdkClientRemoveNavigator" })
+    components_1.Component({ name: "SdkClientRemoveNavigator" })
 ], SdkClientRemoveNavigatorPlugin);
 exports.SdkClientRemoveNavigatorPlugin = SdkClientRemoveNavigatorPlugin;
