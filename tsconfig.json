@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"downlevelIteration": true,
+		"esModuleInterop": true,
+		"incremental": true,
+		"lib": ["es2015", "dom"],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
+		"paths": {
+			"@aws-sdk/*": ["packages/*/src"],
+			"@aws-sdk/client-*": ["clients/client-*/"],
+			"@aws-sdk/aws-*": ["private/aws-*/"],
+			"@aws-sdk/lib-*": ["lib/*"]
+		},
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"resolveJsonModule": true,
+		"target": "es5",
+		"useUnknownInCatchVariables": false
+	},
+	"include": ["packages/", "lib/"],
+	"exclude": ["node_modules/", "**/*.spec.ts"]
+}

@@ -22,7 +22,7 @@ export class SdkClientRenameProjectPlugin extends RendererComponent {
       const metadataDir = clientDirectory.files.filter((sourceFile) =>
         sourceFile.fileName.endsWith("/package.json")
       )?.[0]?.fullFileName;
-      const { name } = metadataDir ? JSON.parse(readFileSync(metadataDir).toString()) : {};
+      const { name } = metadataDir ? JSON.parse(readFileSync(metadataDir).toString()) : undefined;
       const serviceIdReflection = clientDirectory.directories.src.files
         ?.filter((sourceFile) => sourceFile.fileName.endsWith("/runtimeConfig.shared.ts"))?.[0]
         .reflections.filter((reflection) => reflection.name === "serviceId")?.[0];

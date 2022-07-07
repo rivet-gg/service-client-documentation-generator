@@ -1,11 +1,14 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "declarationDir": "dist-types",
-    "experimentalDecorators": true,
-    "rootDir": "src",
-    "strict": false
-  },
-  "extends": "../../tsconfig.types.json",
-  "include": ["src/"]
+	"compilerOptions": {
+		"baseUrl": ".",
+		"declarationDir": "dist-types",
+		"experimentalDecorators": true,
+		"rootDir": "src",
+		"strict": false,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"removeComments": false
+	},
+	"extends": "./tsconfig.json",
+	"include": ["src/"]
 }
